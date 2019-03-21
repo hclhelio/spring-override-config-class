@@ -1,0 +1,11 @@
+## YAML Template.
+---
+nomeAplicacao: Gambira (.yml)
+mensagemUsuario: Vantagens ao utilizar o Gambira (.yml)
+trancodes:
+    -
+        codigo: 0001
+        valor: LOGIN
+    -
+        codigo: 0002
+        valor: AUTENTICACAO
