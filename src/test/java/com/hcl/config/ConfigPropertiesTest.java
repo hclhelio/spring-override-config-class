@@ -35,7 +35,7 @@ public class ConfigPropertiesTest {
      * O teste somente passará se não existir a classe ConfigProperties dentro dos pacotes de testes.
      * Para esse teste passar é necessário renomear a classe ConfigProperties do src/test para ConfigPropertiesOff.
      */
-    @Test
+    //@Test
     public void configPropertiesDefaultTest() {
         String appName = configProperties.getAppName();
         
