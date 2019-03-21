@@ -37,10 +37,10 @@ public class ConfigPropertiesTest {
      */
     @Test
     public void configPropertiesDefaultTest() {
-        String appName = configProperties.getNomeAplicacao();
+        String appName = configProperties.getAppName();
         
         System.out.println("NOME APP: " + appName);
-        assertEquals("APPNAME (application_1.properties)", appName);
+        assertEquals("APPNAME (PROD)", appName);
     }
     
     /**
@@ -54,9 +54,9 @@ public class ConfigPropertiesTest {
      */
     @Test
     public void configPropertiesTestScopeTest() {
-        String appName = configProperties.getNomeAplicacao();
+        String appName = configProperties.getAppName();
         
         System.out.println("NOME APP: " + appName);
-        assertEquals("APPNAME (application_2.properties)", appName);
+        assertEquals("APPNAME (TEST)", appName);
     }
 }

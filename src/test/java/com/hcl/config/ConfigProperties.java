@@ -19,9 +19,10 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:application_2.properties")
 @ConfigurationProperties(prefix = "prop")
 @Data
+//public class ConfigPropertiesOff {
 public class ConfigProperties {
     
-    private String nomeAplicacao;
-    private String versao;
+    private String appName;
+    private String version;
     
 }

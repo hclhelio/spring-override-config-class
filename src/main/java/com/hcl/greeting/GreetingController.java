@@ -30,7 +30,7 @@ public class GreetingController {
     @RequestMapping (value = "/greeting", method = RequestMethod.GET)
     public Greeting greeating(@RequestParam(value = "name", defaultValue = "programador") String name){        
         Greeting g = new Greeting(count.incrementAndGet(), String.format(template, name));
-        g.setNomeSistema(configProperties.getNomeAplicacao());
+        g.setNomeSistema(configProperties.getAppName());
         g.getName();
         return g;
     }

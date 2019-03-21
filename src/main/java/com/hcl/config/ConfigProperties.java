@@ -20,7 +20,7 @@ import org.springframework.context.annotation.PropertySource;
 @Data
 public class ConfigProperties {
     
-    private String nomeAplicacao;
-    private String versao;
+    private String appName;
+    private String version;
     
 }
