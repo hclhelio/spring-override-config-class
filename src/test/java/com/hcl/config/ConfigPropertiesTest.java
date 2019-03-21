@@ -5,7 +5,6 @@
  */
 package com.hcl.config;
 
-import com.gambira.config.ConfigProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Test;
@@ -34,13 +33,14 @@ public class ConfigPropertiesTest {
     /**
      * Testa o carregamento do properties com os códigos do projeto (sem configuracao de teste).
      * O teste somente passará se não existir a classe ConfigProperties dentro dos pacotes de testes.
+     * Para esse teste passar é necessário renomear a classe ConfigProperties do src/test para ConfigPropertiesOff.
      */
     @Test
     public void configPropertiesDefaultTest() {
         String appName = configProperties.getNomeAplicacao();
         
         System.out.println("NOME APP: " + appName);
-        assertEquals("GAMBIRA (application_1.properties)", appName);
+        assertEquals("APPNAME (application_1.properties)", appName);
     }
     
     /**
@@ -57,6 +57,6 @@ public class ConfigPropertiesTest {
         String appName = configProperties.getNomeAplicacao();
         
         System.out.println("NOME APP: " + appName);
-        assertEquals("GAMBIRA (application_2.properties)", appName);
+        assertEquals("APPNAME (application_2.properties)", appName);
     }
 }

@@ -5,7 +5,6 @@
  */
 package com.hcl.greeting;
 
-import com.gambira.greeting.Greeting;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

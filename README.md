@@ -14,7 +14,7 @@ Trechos dos códigos de testes:
 	        String appName = configProperties.getNomeAplicacao();
 	        
 	        System.out.println("NOME APP: " + appName);
-	        assertEquals("GAMBIRA (application_1.properties)", appName);
+	        assertEquals("APPNAME (application_1.properties)", appName);
 	    }
 	    
 	    /**
@@ -30,5 +30,5 @@ Trechos dos códigos de testes:
 	        String appName = configProperties.getNomeAplicacao();
 	        
 	        System.out.println("NOME APP: " + appName);
-	        assertEquals("GAMBIRA (application_2.properties)", appName);
+	        assertEquals("APPNAME (application_2.properties)", appName);
 	    }

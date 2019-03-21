@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.gambira.greeting;
+package com.hcl.greeting;
 
-import com.gambira.config.ConfigProperties;
+import com.hcl.config.ConfigProperties;
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
     
     private static final AtomicLong count = new AtomicLong();
-    private static final String template = "Hello %s!!! Seja bem ---------------!!!";
+    private static final String template = "Hello %s!!!";
     
 
     @Autowired

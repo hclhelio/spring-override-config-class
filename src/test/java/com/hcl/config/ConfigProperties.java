@@ -3,23 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.gambira.config;
 
-import java.util.List;
+package com.hcl.config;
+
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  *
  * @author hcl
  */
 @Configuration
-@ConfigurationProperties
+@PropertySource("classpath:application_2.properties")
+@ConfigurationProperties(prefix = "prop")
 @Data
-public class ConfigurationYml {
+public class ConfigProperties {
     
     private String nomeAplicacao;
-    private String mensagemUsuario;
-    private List<Trancode> trancodes;
+    private String versao;
+    
 }
